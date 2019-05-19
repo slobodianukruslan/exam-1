@@ -322,8 +322,6 @@ header {
 }
 
 .section4__box {
-	/*background: url(../img/bg/bg-dotted.png), no-repeat;
-	background-position: center top;*/
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -331,8 +329,23 @@ header {
 
 .section4__item {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-items: center;
+}
+
+/* Ellipse line */
+
+.section4__item + .section4__item:after {
+  content: '';
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border: 2px dotted rgba(255,255,255,0.8);
+  border-color: rgba(255,255,255,0.8) transparent transparent;
+  border-radius: 50%;
+  right: 30%;
+  top: -50%
 }
 
 .item__icon {
