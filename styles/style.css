@@ -4,12 +4,6 @@ body {
 	color: #fff;
 }
 
-@media only screen and (max-width: 1200px) {
-  .container{
-    width: 980px;
-  }
-}
-
 .container {
 	width: 1100px;
 	margin: 0 auto;
@@ -18,22 +12,14 @@ body {
 header {
 	background: url(../img/bg/bg-header.jpg) 50% / cover no-repeat;
 	position: relative;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	margin: auto;
 	min-height: calc(100vh - 80px);
 }
 
  .header__box {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	width: 650px;	
 } 
 
@@ -54,34 +40,36 @@ header {
 }
 
 .header__form {
-	width: 650px;
 	margin: 50px auto 0;
+	position: relative;		
 }
 
-.header__form:hover {
+.form__field:hover {
 	box-shadow: 0 0 10px 1px #fff;
 }
 
 .form__field:focus {
-	box-shadow: 0 0 10px 1px #fff;
+	box-shadow: 0 0 10px 1px #88F8FF;
 }
 
 .form__field {
-	width: 500px;
+	width: 650px;
 	height: 60px;
-	float: left;
 	line-height: 60px;
 	text-align: center;
 	border: 0;
 	font-family: 'Josefin Sans';
 	font-size: 20px;
 	letter-spacing: 0.1em;
+	padding: 0 150px 0 10px;
 }
 
 .form__btn {
 	width: 150px;
 	height: 60px;
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -112,7 +100,7 @@ header {
 	font-size: 14px;
 	letter-spacing: 0.2em;
 	color: #999999;
-	text-transform: capitalize;
+	text-transform: capitalize;	
 }
 
 .form__field::-moz-placeholder {

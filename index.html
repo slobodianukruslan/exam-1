@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<title>Travel More</title>
 		<link rel="stylesheet" href="styles/normalize.css">
-		<link rel="stylesheet" href="styles/grid.css">	
 		<link rel="stylesheet" href="styles/fonts.css">			
-		<link rel="stylesheet" href="styles/style.css">
-		<link rel="shortcut icon" href="img/icons/compass.png" type="image/x-icon">	
+		<link rel="shortcut icon" href="compass.png" type="image/x-icon">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/screen.css">
 	</head>
 	<body>
 		
@@ -16,26 +16,24 @@
 
 		<header>
 			<div class="container header__box">
-				<div class="box">
-					<div class="header__tittle">Bhromaon</div>
-					<div class="header__text">Safe Travel Anywhere</div>
-					<form class="header__form clearfix" action="#" method="post" name="Form Search" autocomplete="off">
-						<input class="form__field" type="text" placeholder="Search Your Travel Destination">
-						<div class="form__btn">
-							<div class="btn__text">Search</div>
-							<div class="btn__icon">
-								<img src="img/icons/search-icon.png" alt="Search">
-							</div>
+				<h1 class="header__tittle">Bhromaon</h1>
+				<h2 class="header__text">Safe Travel Anywhere</h2>
+				<form class="header__form clearfix" action="#" method="post" name="Form Search" autocomplete="off">
+					<input class="form__field" type="text" maxlength="40" placeholder="Search Your Travel Destination">
+					<div class="form__btn">
+						<div class="btn__text">Search</div>
+						<div class="btn__icon">
+							<img src="img/icons/search-icon.png" alt="Search">
 						</div>
-					</form>				
-					<a class="scroll__link" href="#">
-						<div class="scroll__text">Scroll Down</div>
-						<div class="scroll__icon">
-							<i class="fas fa-angle-down"></i>
-						</div>						
-					</a>
-				</div>
+					</div>
+				</form>				
 			</div>
+			<a class="scroll__link" href="#who_we_are">
+				<div class="scroll__text">Scroll Down</div>
+				<div class="scroll__icon">
+					<i class="fas fa-angle-down"></i>
+				</div>						
+			</a>				
 		</header>
 
 		<!-- Menu -->
@@ -46,16 +44,16 @@
 				<nav>
 					<ul class="menu_nav clearfix">
 						<li class="nav__item">
-							<a href="#" class="item__link">Who We Are</a>
+							<a href="#who_we_are" class="item__link">Who We Are</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="item__link">What We Do</a>
+							<a href="#what_we_do" class="item__link">What We Do</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="item__link">Travel With Us</a>
+							<a href="#Travel" class="item__link">Travel With Us</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="item__link">Contact Us</a>
+							<a href="#Contact" class="item__link">Contact Us</a>
 						</li>
 					</ul>
 				</nav>
@@ -64,10 +62,10 @@
 
 		<!-- Section 3 -->
 
-		<section class="section3">
+		<section class="section3" id="who_we_are">
 			<div class="container clearfix">
 				<div class="section3__info">
-					<div class="section3__tittle">Why Choose Us</div>
+					<h2 class="section3__tittle">Why Choose Us</h2>
 					<p class="section3__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
 					<p class="section3__text">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
 					<div class="section__btn section__btn--sect3 ">Explore Places</div>
@@ -81,26 +79,26 @@
 
 		<!-- Section 4 -->
 
-		<section class="section4">
+		<section class="section4" id="what_we_do">
 			<div class="container">
 				<div class="section4__box">
 					<div class="section4__item">
 						<div class="item__icon">
 							<img src="img/icons/search_blue.png" alt="Search">
 						</div>
-						<div class="item_name">Search Places</div>
+						<h3 class="item_name">Search Places</h3>
 					</div>
 					<div class="section4__item ico-element">
 						<div class="item__icon">
 							<img src="img/icons/chek_red.png" alt="Check">
 						</div>
-						<div class="item_name">Select Places</div>
+						<h3 class="item_name">Select Places</h3>
 					</div>
 					<div class="section4__item ico-element">
 						<div class="item__icon">
 							<img src="img/icons/like_blue.png" alt="Like">
 						</div>
-						<div class="item_name">Book & Enjoy</div>
+						<h3 class="item_name">Book & Enjoy</h3>
 					</div>
 				</div>
 			</div>
@@ -108,12 +106,12 @@
 		
 		<!-- Section 5 -->
 
-		<section class="section5">
+		<section class="section5" id="Travel">
 			<div class="container">
 				<div class="section__box">
-					<div class="section__country">Spain</div>
-					<div class="section__tittle">Grand Spain Madrid</div>
-					<div class="section__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</div>
+					<h2 class="section__country">Spain</h2>
+					<h3 class="section__tittle">Grand Spain Madrid</h3>
+					<p class="section__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
 					<div class="section__btn section__btn--sect5-6">Book Now</div>
 				</div>
 			</div>
@@ -124,9 +122,9 @@
 		<section class="section6">
 			<div class="container clearfix">
 				<div class="section__box section__box--right">
-					<div class="section__country">Spain</div>
-					<div class="section__tittle">Grand Spain Madrid</div>
-					<div class="section__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</div>
+					<h2 class="section__country">Spain</h2>
+					<h3 class="section__tittle">Grand Spain Madrid</h3>
+					<p class="section__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
 					<div class="section__btn section__btn--sect5-6">Book Now</div>
 				</div>
 			</div>
@@ -136,14 +134,12 @@
 
 		<section class="section7">
 			<div class="container">
-				<div class="section7__tittle">What Our  Tourist Say</div>
+				<h2 class="section7__tittle">What Our  Tourist Say</h2>
 				<div class="section7__box clearfix">
-					<div class="box__img">
-						
-					</div>
+					<div class="box__img"></div>
 					<div class="box__info">
-						<div class="info__tittle">Sam Sumon</div>
-						<div class="info__text"><span class="info__mark"><i class="fas fa-quote-left"></i></span> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</div>
+						<h3 class="info__tittle">Sam Sumon</h3>
+						<p class="info__text"><span class="info__mark"><i class="fas fa-quote-left"></i></span> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
 					</div>
 				</div>
 			</div>
@@ -151,9 +147,9 @@
 
 		<!-- Footer -->
 
-		<footer>
-			<div class="footer__tittle">Bhromaon</div>
-			<div class="footer__text">Safe Travel Anywhere</div>
+		<footer id="Contact">
+			<h2 class="footer__tittle">Bhromaon</h2>
+			<h3 class="footer__text">Safe Travel Anywhere</h3>
 			<div class="footer__icons">
 				<a class="footer__link" href="https://www.facebook.com" target="_blank" title="Facebook">
 					<i class="fab fa-facebook-f"></i>
